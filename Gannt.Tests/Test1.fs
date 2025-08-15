@@ -39,6 +39,8 @@ type ProjectSchedule =
 
 // Implement a function that calculates task schedules for a given project
 let calculateProjectSchedule (project: Project) : TaskSchedule list =
+    // todo 1: construct the graph of tasks and dependencies
+
     raise (NotImplementedException())
 
 [<Fact>]
