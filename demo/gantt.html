@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Gantt Chart</title>
+    <style>
+        body {
+          font-family: sans-serif;
+          padding: 20px;
+        }
+
+        .gantt {
+          position: relative;
+          border: 1px solid #ccc;
+          width: 800px; /* chart width */
+          height: auto;
+          background: repeating-linear-gradient(
+            to right,
+            #f9f9f9,
+            #f9f9f9 39px,
+            #eee 40px
+          ); /* vertical grid every 40px */
+        }
+
+        .task {
+          position: absolute;
+          height: 30px;
+          background: steelblue;
+          color: white;
+          padding: 5px;
+          font-size: 12px;
+          border-radius: 4px;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        .task-label {
+          position: absolute;
+          left: -140px; /* labels outside the chart */
+          width: 130px;
+          text-align: right;
+          padding-right: 10px;
+          font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Gantt Chart Example</h2>
+
+<div style="display: flex;">
+    <!-- Labels -->
+    <div>
+        <div class="task-label" style="top: 5px;">Task A</div>
+        <div class="task-label" style="top: 45px;">Task B</div>
+        <div class="task-label" style="top: 85px;">Task C</div>
+    </div>
+
+    <!-- Chart -->
+    <div class="gantt">
+        <!-- Example: left = start offset in px, width = duration in px -->
+        <div class="task" style="top: 5px; left: 0px;   width: 120px;">Task A</div>
+        <div class="task" style="top: 45px; left: 80px;  width: 160px;">Task B</div>
+        <div class="task" style="top: 85px; left: 200px; width: 120px;">Task C</div>
+    </div>
+</div>
+
+<p style="margin-top: 10px;">
+    Each grid column = 1 day, each 40px = 1 day in this demo.
+</p>
+
+</body>
+</html>

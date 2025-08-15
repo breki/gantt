@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gannt.Tests", "Gannt.Tests\Gannt.Tests.fsproj", "{E3D17A16-13F2-4B09-A4C4-BD53DF890207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3D17A16-13F2-4B09-A4C4-BD53DF890207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D17A16-13F2-4B09-A4C4-BD53DF890207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D17A16-13F2-4B09-A4C4-BD53DF890207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D17A16-13F2-4B09-A4C4-BD53DF890207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
